@@ -1,25 +1,19 @@
 ﻿<Properties StartupConfiguration="{1BC1E98D-92DD-4133-A36C-6528980078A5}|">
   <MonoDevelop.Ide.ItemProperties.NitroNetDemo PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NitroNetDemo/Controllers/HomeController.cs">
-    <Files>
-      <File FileName="NitroNetDemo/frontend/patterns/molecules/about/about.hbs" Line="8" Column="1" />
-      <File FileName="NitroNetDemo/frontend/patterns/molecules/contact/contact.hbs" Line="1" Column="1" />
-      <File FileName="NitroNetDemo/frontend/patterns/molecules/index/index.hbs" Line="1" Column="1" />
-      <File FileName="NitroNetDemo/Controllers/HomeController.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NitroNetDemo" expanded="True">
             <Node name="NitroNetDemo" expanded="True">
               <Node name="App_Start" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="frontend" expanded="True">
                 <Node name="patterns" expanded="True">
                   <Node name="molecules" expanded="True">
-                    <Node name="about" expanded="True" />
+                    <Node name="about" expanded="True">
+                      <Node name="about.hbs" selected="True" />
+                    </Node>
                     <Node name="contact" expanded="True" />
                     <Node name="index" expanded="True" />
                   </Node>
@@ -35,9 +29,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/dev/Documents/playgroundz/dotNet/mvc/NitroNet/NitroNetDemo/NitroNetDemo/Controllers/HomeController.cs" relfile="NitroNetDemo/Controllers/HomeController.cs" line="30" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

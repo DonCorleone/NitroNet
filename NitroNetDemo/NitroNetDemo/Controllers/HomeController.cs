@@ -30,12 +30,20 @@ namespace NitroNetDemo.Controllers
             var header = GetHeaderModel("About");
             var footer = GetFooterModel();
 
-            var model = new
-            {
-                Message = "Your application description page.",
+            var model = new {
+                Name = "Bob",
+                Department = new {
+                    Name = "Sector 7G"
+                },
                 Header = header,
                 Footer = footer
             };
+            // var model = new
+            // {
+            //     Message = "<br/><i><strong>LEYLA</strong></i>",
+            //     Header = header,
+            //     Footer = footer
+            // };
 
             return View("frontend/patterns/molecules/about/about", model);
         }
@@ -107,5 +115,10 @@ namespace NitroNetDemo.Controllers
                 ScriptBundle = "/Scripts/respond.js"
             };
         }
+    }
+
+    internal class User
+    {
+        public string Name { get; set; }
     }
 }
