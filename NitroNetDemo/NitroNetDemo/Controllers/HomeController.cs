@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace NitroNet.Demo.Controllers
+namespace NitroNetDemo.Controllers
 {
     public class HomeController : Controller
     {
@@ -27,9 +27,17 @@ namespace NitroNet.Demo.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            var header = GetHeaderModel("About");
+            var footer = GetFooterModel();
 
-            return View();
+            var model = new
+            {
+                Message = "Your application description page.",
+                Header = header,
+                Footer = footer
+            };
+
+            return View("frontend/patterns/molecules/about/about", model);
         }
 
         public ActionResult Contact()

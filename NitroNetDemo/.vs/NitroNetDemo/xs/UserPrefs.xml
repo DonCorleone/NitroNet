@@ -1,17 +1,11 @@
 ﻿<Properties StartupConfiguration="{1BC1E98D-92DD-4133-A36C-6528980078A5}|">
   <MonoDevelop.Ide.ItemProperties.NitroNetDemo PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NitroNetDemo/Global.asax.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NitroNetDemo/Controllers/HomeController.cs">
     <Files>
-      <File FileName="NitroNetDemo/App_Start/RouteConfig.cs" Line="20" Column="1" />
-      <File FileName="NitroNetDemo/App_Start/BundleConfig.cs" Line="1" Column="1" />
-      <File FileName="NitroNetDemo/App_Start/FilterConfig.cs" Line="1" Column="1" />
-      <File FileName="NitroNetDemo/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="NitroNetDemo/nitronet-config.json" Line="1" Column="1" />
       <File FileName="NitroNetDemo/frontend/patterns/molecules/about/about.hbs" Line="8" Column="1" />
-      <File FileName="packages/NUnit.3.12.0/lib/netstandard1.4/nunit.framework.xml" Line="12596" Column="62" />
       <File FileName="NitroNetDemo/frontend/patterns/molecules/contact/contact.hbs" Line="1" Column="1" />
       <File FileName="NitroNetDemo/frontend/patterns/molecules/index/index.hbs" Line="1" Column="1" />
-      <File FileName="NitroNetDemo/Global.asax.cs" Line="12" Column="1" />
+      <File FileName="NitroNetDemo/Controllers/HomeController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,18 +13,19 @@
           <Node name="NitroNetDemo" expanded="True">
             <Node name="NitroNetDemo" expanded="True">
               <Node name="App_Start" expanded="True" />
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
               <Node name="frontend" expanded="True">
                 <Node name="patterns" expanded="True">
                   <Node name="molecules" expanded="True">
+                    <Node name="about" expanded="True" />
                     <Node name="contact" expanded="True" />
                     <Node name="index" expanded="True" />
                   </Node>
                 </Node>
               </Node>
-              <Node name="Global.asax" expanded="True">
-                <Node name="Global.asax.cs" selected="True" />
-              </Node>
+              <Node name="Global.asax" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -41,8 +36,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/dev/Documents/playgroundz/dotNet/mvc/NitroNet/NitroNetDemo/NitroNetDemo/Global.asax.cs" relfile="NitroNetDemo/Global.asax.cs" line="12" column="1" />
-      <Breakpoint file="/Users/dev/Documents/playgroundz/dotNet/mvc/NitroNet/NitroNetDemo/NitroNetDemo/App_Start/BundleConfig.cs" relfile="NitroNetDemo/App_Start/BundleConfig.cs" line="11" column="1" />
+      <Breakpoint file="/Users/dev/Documents/playgroundz/dotNet/mvc/NitroNet/NitroNetDemo/NitroNetDemo/Controllers/HomeController.cs" relfile="NitroNetDemo/Controllers/HomeController.cs" line="30" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
