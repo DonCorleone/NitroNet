@@ -1,0 +1,17 @@
+﻿{{pattern name='header'}}
+<h3>{{Message}}</h3>
+{{#if Address}}
+<address>
+    {{Address.Street}}<br />
+    {{Address.City}}<br />
+    <abbr title="Phone">P:</abbr>
+    {{Address.PhoneNr}}   
+</address>
+{{/if}}
+
+<address>
+    {{#each Mails}}
+        <strong>{{Name}}</strong>   <a href="mailto:{{MailAddress}}">{{MailAddress}}</a><br />
+    {{/each}}
+</address>
+{{pattern name='footer'}}
