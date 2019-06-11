@@ -30,20 +30,27 @@ namespace NitroNetDemo.Controllers
             var header = GetHeaderModel("About");
             var footer = GetFooterModel();
 
+            // var model = new
+            // {
+            //     Items = new [] { "Cat", "Dog" },
+            //     Users = new [] {
+            //         new User{ Name = "Jim" },
+            //         new User{ Name = "Bob" }
+            //     },
+            //     Header = header,
+            //     Footer = footer
+            // };
+
             var model = new {
                 Name = "Bob",
                 Department = new {
                     Name = "Sector 7G"
                 },
+	            IsAdmin = false,
                 Header = header,
                 Footer = footer
             };
-            // var model = new
-            // {
-            //     Message = "<br/><i><strong>LEYLA</strong></i>",
-            //     Header = header,
-            //     Footer = footer
-            // };
+
 
             return View("frontend/patterns/molecules/about/about", model);
         }

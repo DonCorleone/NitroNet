@@ -9,22 +9,42 @@ namespace NitroNetDemo.Controllers
 {
     public class VeilController : Controller
     {
-        public ActionResult Index()
+        public ActionResult Movies()
         {
-            var header = GetHeaderModel("Home");
+            var header = GetHeaderModel("Movies");
             var footer = GetFooterModel();
 
             var model = new
             {
-                GettingStarted =
-                "ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and gives you full control over markup for enjoyable, agile development.",
+                AlbumName = "F♯ A♯ ∞",
+                Artist = new
+                {
+                    ArtistName = "Godspeed You! Black Emperor"
+                },
+                Tracks = new[] {
+                    new {
+                        TrackName = "The Dead Flag Blues",
+                        Length = "00:16:27"
+                    },
+                    new {
+                        TrackName = "East Hastings",
+                        Length = "00:17:58"
+                    },
+                    new {
+                        TrackName = "Providence",
+                        Length = "00:29:02"
+                    }}
+                ,
+                IsAvailableOnVinyl = true,
+                WasUSNumberOne = false,
+                Reviews = new[] { "" },
                 Header = header,
                 Footer = footer
             };
-            return View("frontend/patterns/molecules/index/index", model);
+            return View("frontend/patterns/molecules/movies/movies", model);
             //return View();
         }
-                private object GetHeaderModel(string title)
+        private object GetHeaderModel(string title)
         {
             return new
             {

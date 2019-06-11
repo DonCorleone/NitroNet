@@ -1,6 +1,69 @@
-{{pattern name='header'}}
-{{AlbumName}} - {{Artist.ArtistName}}
-{{#each Tracks}}
-{{TrackName}} - {{Length}}
-{{/each}}
-{{pattern name='footer'}}
+{{ pattern name='header' }}
+<div class="jumbotron">
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- each -->
+    {{AlbumName}} - {{Artist.ArtistName}}
+    <ul>
+        {{#each Tracks}}
+        <li>
+            {{TrackName}} - {{Length}}
+            {{/each}}
+        </li>
+    </ul>
+
+    <!-- if -->
+    <br>
+        Chart Success:
+        {{#if WasUSNumberOne }}
+        It's a hit
+        {{else}}
+        Who listens to charts anyway?
+        {{/if}}
+
+    <!-- unless -->
+    <br>
+        {{#unless WasUSNumberOne }}
+        Who listens to charts anyway?
+        {{/unless}}
+    
+    <!-- each -->
+    <br>
+        {{#each Tracks}}
+        {{TrackName}} - {{Length}}
+        {{/each}}
+
+    <!-- empty foreach -->
+    <br>
+        {{#each Reviews}}
+        xxx
+        {{else}}
+        No Reviews Yet
+        {{/each}}
+    <br>
+
+    <!-- whitespace -->
+    <p>
+        {{~Artist.ArtistName~}}
+    </p>
+
+    <p>
+        {{Artist.ArtistName}}
+    </p>
+
+    <!-- with -->
+    <br>
+        {{#with Artist}}{{ArtistName}} - {{../AlbumName}}{{/with}}
+    
+    <!-- case insensitive -->
+    <br>
+        {{ AlbumName }}
+        {{ albumName }}
+        {{ albumname }}
+        {{ ALBUMNAME }}
+    <br>
+</div>
+{{ pattern name='footer' }}

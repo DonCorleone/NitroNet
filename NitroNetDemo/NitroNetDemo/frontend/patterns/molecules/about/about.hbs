@@ -1,6 +1,9 @@
 ﻿{{ pattern name='header' }}
 <div class="jumbotron">
-    {{Name}}
-    {{Department.Name}}
+    
+    <p>Hello {{Name}}</p>
+    <p>From {{Department.Name}}</p>
+    <p>{{Name}} is {{#if IsAdmin }}an Admin{{ else }}a User{{/if}}</p>
+    {{#unless IsAdmin }}Please Login{{/unless}}
 </div>
 {{ pattern name='footer' }}

@@ -11,13 +11,20 @@
               <Node name="frontend" expanded="True">
                 <Node name="patterns" expanded="True">
                   <Node name="molecules" expanded="True">
-                    <Node name="about" expanded="True">
-                      <Node name="about.hbs" selected="True" />
-                    </Node>
+                    <Node name="about" expanded="True" />
                     <Node name="contact" expanded="True" />
                     <Node name="index" expanded="True" />
+                    <Node name="movies" expanded="True">
+                      <Node name="movies.hbs" selected="True" />
+                    </Node>
                   </Node>
+                  <Node name="organisms" expanded="True" />
                 </Node>
+              </Node>
+              <Node name="Scripts" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="Global.asax" expanded="True" />
             </Node>
